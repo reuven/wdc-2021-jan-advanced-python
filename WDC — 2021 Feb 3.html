@@ -15557,12 +15557,16 @@ e: 6, 6
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exercise:-dictdiff">Exercise: dictdiff<a class="anchor-link" href="#Exercise:-dictdiff">&#182;</a></h1><p>d1 = {'a':1, 'b':2, 'c':3}
-d2 = {'a':1, 'b':2, 'c':4}
-d3 = {'a':1, 'b':5, 'x':100}</p>
-<p>dictdiff(d1, d2) #  {'c':[3, 4]}
-dictdiff(d2, d1) #  {'c':[4, 3]}</p>
-<p>dictdiff(d1, d3) # {'b':[2, 5], 'c':[3, None], 'x':[None, 100]}</p>
+<h1 id="Exercise:-dictdiff">Exercise: dictdiff<a class="anchor-link" href="#Exercise:-dictdiff">&#182;</a></h1><div class="highlight"><pre><span></span><span class="n">d1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
+<span class="n">d3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">}</span>
+
+
+<span class="n">dictdiff</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">)</span> <span class="c1">#  {&#39;c&#39;:[3, 4]}</span>
+<span class="n">dictdiff</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="n">d1</span><span class="p">)</span> <span class="c1">#  {&#39;c&#39;:[4, 3]}</span>
+
+<span class="n">dictdiff</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d3</span><span class="p">)</span> <span class="c1"># {&#39;b&#39;:[2, 5], &#39;c&#39;:[3, None], &#39;x&#39;:[None, 100]}</span>
+</pre></div>
 <ol>
 <li>Write a function, <code>dictdiff</code>, that takes two arguments, both dicts.</li>
 <li>The output will be a dict describing the differences between the two.</li>
