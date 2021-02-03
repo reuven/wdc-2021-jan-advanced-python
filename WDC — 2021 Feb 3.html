@@ -15557,7 +15557,17 @@ e: 6, 6
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exercise:-dictdiff">Exercise: dictdiff<a class="anchor-link" href="#Exercise:-dictdiff">&#182;</a></h1>
+<h1 id="Exercise:-dictdiff">Exercise: dictdiff<a class="anchor-link" href="#Exercise:-dictdiff">&#182;</a></h1><p>d1 = {'a':1, 'b':2, 'c':3}
+d2 = {'a':1, 'b':2, 'c':4}
+d3 = {'a':1, 'b':5, 'x':100}</p>
+<p>dictdiff(d1, d2) #  {'c':[3, 4]}
+dictdiff(d2, d1) #  {'c':[4, 3]}</p>
+<p>dictdiff(d1, d3) # {'b':[2, 5], 'c':[3, None], 'x':[None, 100]}</p>
+<ol>
+<li>Write a function, <code>dictdiff</code>, that takes two arguments, both dicts.</li>
+<li>The output will be a dict describing the differences between the two.</li>
+</ol>
+
 </div>
 </div>
 </body>
