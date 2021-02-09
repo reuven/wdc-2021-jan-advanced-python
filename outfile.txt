@@ -1,0 +1,25 @@
+2 abcd
+2 efgh
+2 ijkl
+2 mnop
+
+3 abcd
+3 efgh
+3 ijkl
+3 mnop
+
+1 abcd
+1 efgh
+1 ijkl
+1 mnop
+
+0 abcd
+0 efgh
+0 ijkl
+0 mnop
+
+4 abcd
+4 efgh
+4 ijkl
+4 mnop
+
